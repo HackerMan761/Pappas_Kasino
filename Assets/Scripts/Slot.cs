@@ -8,7 +8,6 @@ public class Slot : MonoBehaviour
     void Start()
     {
         Spr = GetComponent<SpriteRenderer>();
-        Spr.sprite = körsbär;
     }
 
     // Update is called once per frame
