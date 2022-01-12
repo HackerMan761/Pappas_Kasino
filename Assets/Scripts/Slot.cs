@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Slot : MonoBehaviour
 {
-    // Start is called before the first frame update
+    SpriteRenderer Spr;
     void Start()
     {
-        
+        Spr = GetComponent<SpriteRenderer>();
+        Spr.sprite = körsbär;
     }
 
     // Update is called once per frame
