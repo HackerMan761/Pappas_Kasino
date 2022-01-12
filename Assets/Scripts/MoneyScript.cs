@@ -30,5 +30,9 @@ public class MoneyScript : MonoBehaviour
             Money = Money - 1;
         }
 
+        if(Money < 0)
+        {
+            Money = 0;
+        }
     }
 }
