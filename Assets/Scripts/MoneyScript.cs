@@ -21,7 +21,7 @@ public class MoneyScript : MonoBehaviour
     {
         MoneyText.text = "Money: " + Money; //Ändrar texten som visar hur mycket pengar man har -Oliver
 
-        if (Input.GetKeyDown(KeyCode.O)) //Ger mer pängar -Oliver
+        if (Input.GetKeyDown(KeyCode.O)) //Ger mer pengar -Oliver
         {
             Money = Money + 1;
         }
