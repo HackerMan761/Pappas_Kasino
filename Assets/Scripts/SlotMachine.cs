@@ -5,8 +5,8 @@ using UnityEngine;
 public class SlotMachine : MonoBehaviour
 {
     [SerializeField]
-    int y = 2;
-    int x;
+    int y = 3;
+    public int x;
     void Start()
     {
 
