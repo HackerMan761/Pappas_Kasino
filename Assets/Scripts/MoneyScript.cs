@@ -9,6 +9,9 @@ public class MoneyScript : MonoBehaviour
 
     public Text MoneyText;
 
+    public Button MPengar;
+
+    
 
     // Start is called before the first frame update    
     void Start()
@@ -33,6 +36,18 @@ public class MoneyScript : MonoBehaviour
         if(Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
         {
             Money = 0;
+
+            //Lägg in bad ending
         }
+
+        if(Money == 1000000)
+        {
+            //Lägg in good ending
+        }
+    }
+
+    public void MoreMoney()
+    {
+        Money = Money + 100;
     }
 }
