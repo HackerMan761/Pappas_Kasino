@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +19,7 @@ public class MoneyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoneyText.text = "Money: " + Money; //Ändrar texten som visar hur mycket pengar man har -Oliver
+        MoneyText.text = "Money: " + Money + "â‚¿"; //Ã„ndrar texten som visar hur mycket pengar man har -Oliver
 
         if (Input.GetKeyDown(KeyCode.O)) //Ger mer pengar -Oliver
         {
@@ -30,7 +30,7 @@ public class MoneyScript : MonoBehaviour
             Money = Money - 1;
         }
 
-        if(Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
+        if(Money < 0) //Ser till sÃ¥ att man inte kan fÃ¥ under 0 pengar -Oliver
         {
             Money = 0;
         }
