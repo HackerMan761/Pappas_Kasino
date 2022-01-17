@@ -5,18 +5,16 @@ using UnityEngine.UI;
 
 public class MoneyScript : MonoBehaviour
 {
-    public float Money;
+    public static float Money;
 
     public Text MoneyText;
 
     public Button MPengar;
 
-    
-
     // Start is called before the first frame update    
     void Start()
     {
-        
+        Application.Quit();
     }
 
     // Update is called once per frame
@@ -44,6 +42,14 @@ public class MoneyScript : MonoBehaviour
         {
             //Lägg in good ending
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Money = Money * 100;
+        }
+
+
+
     }
 
     public void MoreMoney()
