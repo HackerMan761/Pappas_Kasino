@@ -18,7 +18,7 @@ public class Spak : MonoBehaviour
     {
         if(Input.GetMouseButton(0))
         {
-            TimeThing = TimeThing + 1;
+            TimeThing = TimeThing + 1;  //Den ökar timern när man håller ner musen -Melvin
         }
     }
 
