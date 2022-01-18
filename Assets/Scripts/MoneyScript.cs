@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class MoneyScript : MonoBehaviour
 {
-    public static float Money;
+    public static float Money = 1000;
 
     public Text MoneyText;
 
     public Button MPengar;
+
+    public AudioSource MoneyDown;
 
     // Start is called before the first frame update    
     void Start()
@@ -29,6 +31,8 @@ public class MoneyScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P)) //Tar bort pengar -Oliver
         {
             Money = Money - 1;
+
+            MoneyDown.Play();
         }
 
         if(Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
@@ -48,7 +52,7 @@ public class MoneyScript : MonoBehaviour
             Money = Money * 100;
         }
 
-
+        
 
     }
 

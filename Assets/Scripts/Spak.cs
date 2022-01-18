@@ -6,11 +6,15 @@ public class Spak : MonoBehaviour
 {
     public float TimeThing;
 
+    public AudioSource MoneyDown;
+
     void Update()
     {
-        if(TimeThing == 1000)  //Tar bort pengar när den når 1000 -Oliver
+        if(TimeThing == 600)  //Tar bort pengar när den når 1000 -Oliver
         {
             MoneyScript.Money = MoneyScript.Money - 50;
+
+            MoneyDown.Play();
         }
     }
 
