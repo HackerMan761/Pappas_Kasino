@@ -782,8 +782,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199084840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.84, y: 1, z: 0}
-  m_LocalScale: {x: 0.3125, y: 1.9332389, z: 1}
+  m_LocalPosition: {x: -2.84375, y: 1, z: 0}
+  m_LocalScale: {x: 0.3125, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -846,7 +846,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoneyText: {fileID: 183585872}
   MPengar: {fileID: 335512744}
-  MoneyDown: {fileID: 0}
 --- !u!4 &1916240386
 Transform:
   m_ObjectHideFlags: 0
