@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Castle : MonoBehaviour
 {
-    Transform Transform;
-    SpriteRenderer Spr;
+    private Transform Transform;
+    private SpriteRenderer Spr;
     public virtual void Start()
     {
         Transform = GetComponent<Transform>();

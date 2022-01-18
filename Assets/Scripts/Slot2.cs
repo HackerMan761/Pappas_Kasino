@@ -6,7 +6,6 @@ public class Slot2 : Castle
 {
     public override void Spakdrag()
     {
-        print("Tjena");
         base.Spakdrag();
     }
 }
