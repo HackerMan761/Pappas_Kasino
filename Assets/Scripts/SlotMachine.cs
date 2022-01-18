@@ -11,8 +11,7 @@ public class SlotMachine : MonoBehaviour
 
     private void Start()
     {
-        slots = GetComponents<Castle>();
-        print(slots.Length);
+        
     }
     private void Update()
     {
