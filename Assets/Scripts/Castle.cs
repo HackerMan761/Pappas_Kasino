@@ -12,7 +12,7 @@ public class Castle : MonoBehaviour
     public virtual void Start()
     {
         Transform = GetComponent<Transform>();
-        Transform.position = new Vector3(Transform.position.x, Transform.position.y, -16);
+        Transform.position = new Vector3(Transform.position.x, Transform.position.y, 123);
         Spr = GetComponent<SpriteRenderer>();
     }
     
@@ -20,10 +20,10 @@ public class Castle : MonoBehaviour
     {
         CurrentSpr = Random.Range(0,4);
         Spr.sprite = sprites[CurrentSpr];
-        Transform.position = new Vector3(Transform.position.x, Transform.position.y, 0);
+        Transform.position = new Vector3(Transform.position.x, Transform.position.y, 122);
     }
     public virtual void Vanish()
     {
-        Transform.position = new Vector3(Transform.position.x, Transform.position.y, -16);
+        Transform.position = new Vector3(Transform.position.x, Transform.position.y, 123);
     }
 }
