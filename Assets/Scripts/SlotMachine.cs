@@ -6,7 +6,7 @@ public class SlotMachine : MonoBehaviour
 {   
     public int x;
     public Castle[] slots;
-    public int current;
+    public int current = 0;
     int y = 3;
 
     private void Start()
@@ -22,11 +22,17 @@ public class SlotMachine : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            slots[current].Spakdrag();
-            current++;
-            if (current > slots.Length - 1)
+            if(current < slots.Length)
+            {
+                slots[current].Spakdrag();
+                current++;
+            }
+            else
             {
                 current = 0;
+                slots[0].Vanish();
+                slots[1].Vanish();
+                slots[2].Vanish();
             }
         }
     }
