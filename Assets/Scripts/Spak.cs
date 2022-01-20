@@ -10,7 +10,7 @@ public class Spak : MonoBehaviour
 
     void Update()
     {
-        if(TimeThing == 600)  //Tar bort pengar när den når 600 (200 är ungefär 1 sekund) -Oliver
+        if(TimeThing == 200)  //Tar bort pengar när den når 600 (200 är ungefär 1 sekund) -Oliver
         {
             MoneyScript.Money = MoneyScript.Money - 50;
 
