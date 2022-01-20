@@ -18,12 +18,12 @@ public class Castle : MonoBehaviour
     
     public virtual void Spakdrag()
     {
-        CurrentSpr += 1;
-        if (CurrentSpr > sprites.Length - 1)
-        {
-            CurrentSpr = 0;
-        }
+        CurrentSpr = Random.Range(0,4);
         Spr.sprite = sprites[CurrentSpr];
         Transform.position = new Vector3(Transform.position.x, Transform.position.y, 0);
+    }
+    public virtual void Vanish()
+    {
+        Transform.position = new Vector3(Transform.position.x, Transform.position.y, -16);
     }
 }
