@@ -22,15 +22,6 @@ public class MoneyScript : MonoBehaviour
     {
         MoneyText.text = "Money: " + Money + "₿"; //Ändrar texten som visar hur mycket pengar man har -Oliver
 
-        if (Input.GetKeyDown(KeyCode.O)) //Ger mer pengar  Ta bort senare
-        {
-            Money = Money + 1;
-        }
-        if (Input.GetKeyDown(KeyCode.P)) //Tar bort pengar  Ta bort senare
-        {
-            Money = Money - 1;
-        }
-
         if(Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
         {
             Money = 0;
@@ -42,14 +33,6 @@ public class MoneyScript : MonoBehaviour
         {
             //Lägg in good ending
         }
-
-        if (Input.GetKeyDown(KeyCode.Space)) //Ta bort senare
-        {
-            Money = Money * 100;
-        }
-
-        
-
     }
 
     public void MoreMoney()  //Ta bort senare
