@@ -9,8 +9,6 @@ public class MoneyScript : MonoBehaviour
 
     public Text MoneyText;
 
-    public Button MPengar;  //Ta bort senare
-
     // Start is called before the first frame update    
     void Start()
     {
@@ -33,10 +31,5 @@ public class MoneyScript : MonoBehaviour
         {
             //Lägg in good ending
         }
-    }
-
-    public void MoreMoney()  //Ta bort senare
-    {
-        Money = Money + 100;
     }
 }
