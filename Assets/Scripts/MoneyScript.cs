@@ -9,10 +9,15 @@ public class MoneyScript : MonoBehaviour
 
     public Text MoneyText;
 
+    public GameObject badEnd;
+
+    public GameObject goodEnd;
+
     // Start is called before the first frame update    
     void Start()
     {
-        
+        badEnd.SetActive(false);
+        goodEnd.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,11 +30,20 @@ public class MoneyScript : MonoBehaviour
             Money = 0;
 
             //Lägg in bad ending
+            MoneyText.gameObject.SetActive(false);
+            badEnd.SetActive(true);
         }
 
-        if(Money == 1000000)
+        if(Money > 1000000)
         {
             //Lägg in good ending
+            MoneyText.gameObject.SetActive(false);
+            goodEnd.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Money = Money + 100000;
         }
     }
 }
