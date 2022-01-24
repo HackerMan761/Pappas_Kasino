@@ -8,7 +8,6 @@ public class Slot3 : Castle
     public override void Start()
     {
         base.Start();
-        spak = GetComponent<Spak>();
     }
     public override void Spakdrag()
     {

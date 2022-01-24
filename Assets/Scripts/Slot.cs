@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Slot : Castle
 {
-   public override void Spakdrag()
+    public override void Spakdrag()
         {
          base.Spakdrag();
         }

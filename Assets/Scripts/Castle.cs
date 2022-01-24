@@ -10,28 +10,22 @@ public class Castle : MonoBehaviour
     [SerializeField]
     private Sprite[] sprites;
     public Spak spakgrej;
-    private Animator anim;
+    public Animator anim;
     public virtual void Start()
     {
         Transform = GetComponent<Transform>();
         Transform.position = new Vector3(Transform.position.x, Transform.position.y, 123);
         Spr = GetComponent<SpriteRenderer>();
+        spakgrej.spel = false;
     }
     public virtual void Spakdrag()
     {
         if (spakgrej.spel)
         {
-            anim.SetBool("Knapptryck", true);
-            CurrentSpr = Random.Range(0,3);
+            CurrentSpr = Random.Range(0,4);
             Spr.sprite = sprites[CurrentSpr];
             Transform.position = new Vector3(Transform.position.x, Transform.position.y, 122);
         }
-        else
-        {
-            anim.SetBool("Knapptryck", false);
-        }
-
-
     }
     public virtual void Vanish()
     {

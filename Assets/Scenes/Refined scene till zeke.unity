@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44230604, g: 0.491342, b: 0.57122165, a: 1}
+  m_IndirectSpecularColor: {r: 0.44230562, g: 0.49134135, b: 0.5712205, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -171,6 +171,7 @@ MonoBehaviour:
   - {fileID: 125386369}
   - {fileID: 2023051032}
   current: 0
+  spak: {fileID: 797800218}
 --- !u!1 &125386368
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +207,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d53e3744bef1774bb647d044149d661, type: 3}
   - {fileID: 21300000, guid: 5576ba149d3557b439b66082d5688f73, type: 3}
   - {fileID: 21300000, guid: ddd1bdf1b98b569488431018b9711e93, type: 3}
-  spakgrej: {fileID: 0}
+  spakgrej: {fileID: 797800218}
+  anim: {fileID: 178823930}
 --- !u!212 &125386370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -638,7 +640,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d53e3744bef1774bb647d044149d661, type: 3}
   - {fileID: 21300000, guid: 5576ba149d3557b439b66082d5688f73, type: 3}
   - {fileID: 21300000, guid: ddd1bdf1b98b569488431018b9711e93, type: 3}
-  spakgrej: {fileID: 0}
+  spakgrej: {fileID: 797800218}
+  anim: {fileID: 178823930}
 --- !u!212 &597176465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1655,6 +1658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites: []
   spakgrej: {fileID: 797800218}
+  anim: {fileID: 178823930}
 --- !u!1 &1449426338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,8 +2053,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d53e3744bef1774bb647d044149d661, type: 3}
   - {fileID: 21300000, guid: 5576ba149d3557b439b66082d5688f73, type: 3}
   - {fileID: 21300000, guid: ddd1bdf1b98b569488431018b9711e93, type: 3}
-  spakgrej: {fileID: 0}
-  spak: {fileID: 0}
+  spakgrej: {fileID: 797800218}
+  anim: {fileID: 178823930}
+  spak: {fileID: 797800218}
 --- !u!212 &2023051033
 SpriteRenderer:
   m_ObjectHideFlags: 0
