@@ -12,7 +12,7 @@ public class Spak : MonoBehaviour
     {
         if(TimeThing == 100)  //Tar bort pengar när den når 100 (200 är ungefär 1 sekund) -Oliver
         {
-            MoneyScript.Money = MoneyScript.Money - 50;
+            MoneyScript.Money = MoneyScript.Money - MoneyScript.Bet;
 
             MoneyDown.Play();  //Spelar ett ljud när du spenderar pengar -Melvin
 

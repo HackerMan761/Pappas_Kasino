@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class MoneyScript : MonoBehaviour
 {
-    public static float Money = 100;
+    public static float Money = 1000;
+    public static float Bet = 50;
 
     public Text MoneyText;
+    public Text CurrentBet;
 
     public GameObject badEnd;
-
     public GameObject goodEnd;
 
     // Start is called before the first frame update    
@@ -24,19 +25,20 @@ public class MoneyScript : MonoBehaviour
     void Update()
     {
         MoneyText.text = "Money: " + Money + "₿"; //Ändrar texten som visar hur mycket pengar man har -Oliver
+        CurrentBet.text = "Current Bet: " + Bet; 
 
-        if(Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
+        if (Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
         {
             Money = 0;
 
-            //Lägg in bad ending
+            //bad ending
             MoneyText.gameObject.SetActive(false);
             badEnd.SetActive(true);
         }
 
-        if(Money > 1000000)
+        if (Money > 1000000)
         {
-            //Lägg in good ending
+            //good ending
             MoneyText.gameObject.SetActive(false);
             goodEnd.SetActive(true);
         }
@@ -45,5 +47,25 @@ public class MoneyScript : MonoBehaviour
         {
             Money = Money + 100000;
         }
+
+
+        //Bet
+        if (Input.GetKeyDown(KeyCode.Tab) && Bet != Money)  //Om man trycker på tab och bet inte = money så lägger den till 50 i ditt bet -Oliver
+        {
+            Bet = Bet + 50;
+        }
+        if(Input.GetKeyDown(KeyCode.Tab) && Bet == Money)  //Om Bet är lika mycket som money och man trycker på tab så gör den så att den blir 50 -Oliver
+        {
+            Bet = 50;
+        }
+        if(Bet > 250)  //Max bet -Oliver
+        {
+            Bet = 50;
+        }
+        if(Bet > Money)  //Kan inte gå över pengar -Oliver
+        {
+            Bet = Money;
+        }
+        
     }
 }
