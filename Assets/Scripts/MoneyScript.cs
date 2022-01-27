@@ -10,9 +10,12 @@ public class MoneyScript : MonoBehaviour
 
     public Text MoneyText;
     public Text CurrentBet;
+    
 
     public GameObject badEnd;
     public GameObject goodEnd;
+
+    public Button restart;
 
     // Start is called before the first frame update    
     void Start()
