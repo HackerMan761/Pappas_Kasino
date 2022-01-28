@@ -10,7 +10,6 @@ public class MoneyScript : MonoBehaviour
 
     public Text MoneyText;
     public Text CurrentBet;
-    
 
     public GameObject badEnd;
     public GameObject goodEnd;
@@ -53,6 +52,9 @@ public class MoneyScript : MonoBehaviour
 
 
         //Bet
+
+
+        /*
         if (Input.GetKeyDown(KeyCode.Tab) && Bet != Money)  //Om man trycker på tab och bet inte = money så lägger den till 50 i ditt bet -Oliver
         {
             Bet = Bet + 50;
@@ -61,6 +63,7 @@ public class MoneyScript : MonoBehaviour
         {
             Bet = 50;
         }
+        */
         if(Bet > 250)  //Max bet -Oliver
         {
             Bet = 50;
