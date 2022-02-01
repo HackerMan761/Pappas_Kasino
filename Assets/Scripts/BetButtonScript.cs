@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BetButtonScript : MonoBehaviour
 {
-    public Animation ButtonAni;
+    public Animator ButtonAni;
 
     public float Grej;
 
@@ -26,7 +26,9 @@ public class BetButtonScript : MonoBehaviour
 
         if(Grej == 100)
         {
-            ButtonAni.Stop();
+            ButtonAni.SetBool("Knapptryck", false);
+            Grej = 0;
+            Bool = false;
         }
     }
 
@@ -35,13 +37,14 @@ public class BetButtonScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && MoneyScript.Bet != MoneyScript.Money)
         {
             MoneyScript.Bet = MoneyScript.Bet + 50;
-            ButtonAni.Play();
+            ButtonAni.SetBool("Knapptryck", true);
             Bool = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && MoneyScript.Bet == MoneyScript.Money)
         {
             MoneyScript.Bet = 50;
+            
         }
 
         Debug.Log("Idk");
