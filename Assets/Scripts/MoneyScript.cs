@@ -72,5 +72,9 @@ public class MoneyScript : MonoBehaviour
         {
             Bet = Money;
         }
+        if(Bet < 50)  //Gör så att man inte kan betta under 50;
+        {
+            Bet = 250;
+        }
     }
 }
