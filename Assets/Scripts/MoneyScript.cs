@@ -35,6 +35,7 @@ public class MoneyScript : MonoBehaviour
 
             //bad ending
             MoneyText.gameObject.SetActive(false);
+            CurrentBet.gameObject.SetActive(false);
             badEnd.SetActive(true);
         }
 
@@ -42,6 +43,7 @@ public class MoneyScript : MonoBehaviour
         {
             //good ending
             MoneyText.gameObject.SetActive(false);
+            CurrentBet.gameObject.SetActive(false);
             goodEnd.SetActive(true);
         }
 
