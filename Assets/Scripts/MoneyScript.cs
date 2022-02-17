@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Oliver
 public class MoneyScript : MonoBehaviour
 {
-    public static float Money = 1000;
+    public static float Money = 1000; 
     public static float Bet = 50;
 
     public Text MoneyText;
@@ -25,10 +26,10 @@ public class MoneyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoneyText.text = "Money: " + Money + "₿"; //Ändrar texten som visar hur mycket pengar man har -Oliver
+        MoneyText.text = "Money: " + Money + "₿"; //Ändrar texten som visar hur mycket pengar man har 
         CurrentBet.text = "Current Bet: " + Bet; 
 
-        if (Money < 0) //Ser till så att man inte kan få under 0 pengar -Oliver
+        if (Money < 0) //Ser till så att man inte kan få under 0 pengar 
         {
             Money = 0;
 
@@ -44,34 +45,22 @@ public class MoneyScript : MonoBehaviour
             goodEnd.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G))  //Temporärt sätt att få pengar.
         {
             Money = Money + 100000;
         }
 
 
         //Bet
-
-
-        /*
-        if (Input.GetKeyDown(KeyCode.Tab) && Bet != Money)  //Om man trycker på tab och bet inte = money så lägger den till 50 i ditt bet -Oliver
-        {
-            Bet = Bet + 50;
-        }
-        if(Input.GetKeyDown(KeyCode.Tab) && Bet == Money)  //Om Bet är lika mycket som money och man trycker på tab så gör den så att den blir 50 -Oliver
+        if(Bet > 250)  //Max bet 
         {
             Bet = 50;
         }
-        */
-        if(Bet > 250)  //Max bet -Oliver
-        {
-            Bet = 50;
-        }
-        if(Bet > Money)  //Kan inte gå över pengar -Oliver
+        if(Bet > Money)  //Kan inte gå över pengar 
         {
             Bet = Money;
         }
-        if(Bet < 50)  //Gör så att man inte kan betta under 50;
+        if(Bet < 50)  //Gör så att man inte kan betta under 50; 
         {
             Bet = 250;
         }
