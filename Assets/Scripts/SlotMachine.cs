@@ -16,17 +16,15 @@ public class SlotMachine : MonoBehaviour
             {
             if(current < slots.Length)
             {
-                slots[current].Spakdrag();
-                current++;
+                    slots[current].Spakdrag();
+                    current++;
             }
             else
             {
-                
                 current = 0;
                 slots[0].Vanish();
                 slots[1].Vanish();
                 slots[2].Vanish();
-           
             }
            }
         }
