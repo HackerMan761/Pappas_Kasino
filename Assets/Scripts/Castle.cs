@@ -12,14 +12,14 @@ public class Castle : MonoBehaviour
     private Sprite[] sprites;
     public Spak spakgrej;
     public Animator anim;
-    public virtual void Start()
+    public virtual void Start() //referenser
     {
         Transform = GetComponent<Transform>();
         Transform.position = new Vector3(Transform.position.x, Transform.position.y, 123);
         Spr = GetComponent<SpriteRenderer>();
         spakgrej.spel = false;
     }
-    public virtual void Spakdrag()
+    public virtual void Spakdrag() //väljer en random ikon och visar sig på maskinen
     {
         if (spakgrej.spel)
         {
@@ -28,7 +28,7 @@ public class Castle : MonoBehaviour
             Transform.position = new Vector3(Transform.position.x, Transform.position.y, 122);
         }
     }
-    public virtual void Vanish()
+    public virtual void Vanish() //gömmer ikonen
     {
         Transform.position = new Vector3(Transform.position.x, Transform.position.y, 123);
     }
