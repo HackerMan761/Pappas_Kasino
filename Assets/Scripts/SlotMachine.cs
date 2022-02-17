@@ -11,7 +11,7 @@ public class SlotMachine : MonoBehaviour
     public Spak spak;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //när man trycker på space och har lagt in pengar visar den nästa ikon, om alla är framme försvinner dem
         {
             if (spak.spel)
             {

@@ -9,6 +9,6 @@ public class Slot3 : Castle
     public override void Spakdrag()
     {
         base.Spakdrag();
-        spak.spel = false;
+        spak.spel = false; //när man visat alla ikoner måste man betala mer för att göra det igen
     }
 }
