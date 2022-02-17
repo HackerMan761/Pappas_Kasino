@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BetButtonScript : MonoBehaviour  //All kod i det här scriptet är skrivet av Oliver.
+
+//All kod i det här scriptet är skrivet av Oliver.
+public class BetButtonScript : MonoBehaviour  
 {
     public Animator ButtonAni;
 
