@@ -14,7 +14,7 @@ public class Spak : MonoBehaviour
         {
             MoneyScript.Money = MoneyScript.Money - MoneyScript.Bet;
 
-            MoneyDown.Play();  //Spelar ett ljud när du spenderar pengar -Melvin
+            MoneyDown.Play();  //Spelar ett ljud när du spenderar pengar -Oliver
 
             spel = true;
             anim = false;
@@ -33,6 +33,6 @@ public class Spak : MonoBehaviour
     public void OnMouseUp()
     {
         anim = false;
-        TimeThing = 0; //Resetar timer grejen när man slutar hålla ner musen -Oliver
+        TimeThing = 0; //Resetar timer grejen när man slutar hålla ner musen -Melvin
     }
 }
