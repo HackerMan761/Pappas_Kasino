@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Refined scene till zeke.unity
     guid: ecb258bb41d6107409a250729d93aebe
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: e3bb976e76e36c642bdb9d1615ef717b
   m_configObjects: {}

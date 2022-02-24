@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //Oliver
 public class MoneyScript : MonoBehaviour
@@ -34,9 +35,8 @@ public class MoneyScript : MonoBehaviour
             Money = 0;
 
             //bad ending
-            MoneyText.gameObject.SetActive(false);
-            CurrentBet.gameObject.SetActive(false);
-            badEnd.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
 
         if (Money > 1000000)
