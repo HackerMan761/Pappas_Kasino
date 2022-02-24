@@ -50,7 +50,7 @@ public class BetButtonScript : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Mouse0) && MoneyScript.Bet != MoneyScript.Money && gameObject.tag == "Red")  //Får saker att hända om man trycker på den röda knappen
         {
-            MoneyScript.Bet = MoneyScript.Bet - 50;  //Minskar ditt ber med 50
+            MoneyScript.Bet = MoneyScript.Bet - 50;  //Minskar ditt bet med 50
             ButtonAni.SetBool("ButtonPress", true);  //Animation
             Bool = true;  //Sant
         }
